@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +3.3V-HDMI
+D Power symbol creates a global label with name "+3.3V-HDMI"
+K power-flag
+$ENDCMP
+#
+$CMP +3V3-HDMI
+D Power symbol creates a global label with name "+3V3-HDMI"
+K power-flag
+$ENDCMP
+#
+$CMP AP64501SP-13
+D 570kHz 40V 5A Synchronois DC/DC Buck Converter
+K buck switching converter
+F https://www.diodes.com/assets/Datasheets/AP6502.pdf
+$ENDCMP
+#
+$CMP AP6503
+D 340kHz 23V 3A Synchonous DC/DC Buck Converter
+K buck switching converter
+F https://www.diodes.com/assets/Datasheets/AP6503.pdf
+$ENDCMP
+#
+$CMP RT9742GGJ5
+D Current Limited Load Switch, SOT-23-5
+K Limit USB Active High
+F https://www.richtek.com/assets/product_file/RT9742/DS9742-00.pdf
+$ENDCMP
+#
+$CMP USB_A_Stack
+D USB Type A connector
+K connector USB
+F  ~
+$ENDCMP
+#
+$CMP Wuerth-7499111446
+D LAN Transformer Jack, RJ45, 10/100/1000 BaseT
+K lan jack transformer ethernet gigabit 10 100 1000 baset
+F https://datasheet.lcsc.com/szlcsc/1901091107_UDE-Corp-RB1-125B8G1A_C363353.pdf
+$ENDCMP
+#
+#End Doc Library

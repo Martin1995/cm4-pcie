@@ -1,0 +1,1138 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Raspberry_Pi_Compute_Module_4:Compute_Module_4_Functional U1
+U 7 1 606D6C74
+P 6400 1000
+F 0 "U1" H 7350 1287 60  0000 C CNN
+F 1 "Compute_Module_4_Functional" H 7350 1181 60  0000 C CNN
+F 2 "RPi_Compute_Module_4:Raspberry-Pi-4-Compute-Module" H 6600 1050 60  0001 L CNN
+F 3 "" H 6600 850 60  0001 L CNN
+	7    6400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:HDMI_A_1.4 J4
+U 1 1 606DB87B
+P 10350 1850
+F 0 "J4" H 10780 1896 50  0000 L CNN
+F 1 "HDMI_A_1.4" H 10780 1805 50  0000 L CNN
+F 2 "Connector_HDMI:HDMI_A_Kycon_KDMIX-SL1-NS-WS-B15_VerticalRightAngle" H 10375 1850 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/HDMI" H 10375 1850 50  0001 C CNN
+	1    10350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2950 10150 3100
+Wire Wire Line
+	10150 3100 10250 3100
+Wire Wire Line
+	10650 3100 10650 2950
+Wire Wire Line
+	10550 2950 10550 3100
+Connection ~ 10550 3100
+Wire Wire Line
+	10550 3100 10650 3100
+Wire Wire Line
+	10450 2950 10450 3100
+Connection ~ 10450 3100
+Wire Wire Line
+	10450 3100 10550 3100
+Wire Wire Line
+	10350 2950 10350 3100
+Connection ~ 10350 3100
+Wire Wire Line
+	10350 3100 10450 3100
+Wire Wire Line
+	10250 2950 10250 3100
+Connection ~ 10250 3100
+Wire Wire Line
+	10250 3100 10350 3100
+Wire Wire Line
+	10150 3100 10150 3300
+Connection ~ 10150 3100
+$Comp
+L CM4-pcie:RT9742SNGV U4
+U 1 1 606ED30E
+P 8200 5750
+F 0 "U4" H 8200 6125 50  0000 C CNN
+F 1 "RT9742SNGV" H 8200 6034 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8200 5750 50  0001 C CNN
+F 3 "" H 8200 5750 50  0001 C CNN
+	1    8200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 606F3F9F
+P 7200 5600
+F 0 "#PWR0101" H 7200 5450 50  0001 C CNN
+F 1 "+5V" V 7215 5728 50  0000 L CNN
+F 2 "" H 7200 5600 50  0001 C CNN
+F 3 "" H 7200 5600 50  0001 C CNN
+	1    7200 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 606F43F8
+P 7550 5900
+F 0 "C12" H 7665 5946 50  0000 L CNN
+F 1 "100n" H 7665 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7588 5750 50  0001 C CNN
+F 3 "~" H 7550 5900 50  0001 C CNN
+	1    7550 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5600 7550 5600
+Wire Wire Line
+	7550 5600 7550 5750
+Connection ~ 7550 5600
+Wire Wire Line
+	7550 5600 7900 5600
+Wire Wire Line
+	7550 6050 7550 6150
+Wire Wire Line
+	7550 6150 7900 6150
+Wire Wire Line
+	7900 6150 7900 5900
+Connection ~ 7550 6150
+Wire Wire Line
+	7550 6150 7550 6300
+$Comp
+L power:GND #PWR0102
+U 1 1 606F67F9
+P 7550 6300
+F 0 "#PWR0102" H 7550 6050 50  0001 C CNN
+F 1 "GND" H 7555 6127 50  0000 C CNN
+F 2 "" H 7550 6300 50  0001 C CNN
+F 3 "" H 7550 6300 50  0001 C CNN
+	1    7550 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 606F6B62
+P 10150 3300
+F 0 "#PWR0103" H 10150 3050 50  0001 C CNN
+F 1 "GND" H 10155 3127 50  0000 C CNN
+F 2 "" H 10150 3300 50  0001 C CNN
+F 3 "" H 10150 3300 50  0001 C CNN
+	1    10150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 606FA1F8
+P 8700 5900
+F 0 "C13" H 8815 5946 50  0000 L CNN
+F 1 "100n" H 8815 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8738 5750 50  0001 C CNN
+F 3 "~" H 8700 5900 50  0001 C CNN
+	1    8700 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5600 8700 5600
+Wire Wire Line
+	8700 5600 8700 5750
+Connection ~ 8700 5600
+Wire Wire Line
+	8700 5600 9050 5600
+Wire Wire Line
+	8700 6050 8700 6150
+Wire Wire Line
+	8700 6150 7900 6150
+Connection ~ 7900 6150
+Text Label 9050 5600 2    50   ~ 0
+HDMI_5v
+Text Label 10050 650  0    50   ~ 0
+HDMI_5v
+Wire Wire Line
+	10350 750  10350 650 
+Wire Wire Line
+	10350 650  10050 650 
+$Comp
+L Connector:HDMI_A_1.4 J5
+U 1 1 6070C57B
+P 10350 4850
+F 0 "J5" H 10780 4896 50  0000 L CNN
+F 1 "HDMI_A_1.4" H 10780 4805 50  0000 L CNN
+F 2 "Connector_HDMI:HDMI_A_Kycon_KDMIX-SL1-NS-WS-B15_VerticalRightAngle" H 10375 4850 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/HDMI" H 10375 4850 50  0001 C CNN
+	1    10350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 5950 10150 6100
+Wire Wire Line
+	10150 6100 10250 6100
+Wire Wire Line
+	10650 6100 10650 5950
+Wire Wire Line
+	10550 5950 10550 6100
+Connection ~ 10550 6100
+Wire Wire Line
+	10550 6100 10650 6100
+Wire Wire Line
+	10450 5950 10450 6100
+Connection ~ 10450 6100
+Wire Wire Line
+	10450 6100 10550 6100
+Wire Wire Line
+	10350 5950 10350 6100
+Connection ~ 10350 6100
+Wire Wire Line
+	10350 6100 10450 6100
+Wire Wire Line
+	10250 5950 10250 6100
+Connection ~ 10250 6100
+Wire Wire Line
+	10250 6100 10350 6100
+Wire Wire Line
+	10150 6100 10150 6300
+Connection ~ 10150 6100
+$Comp
+L power:GND #PWR0104
+U 1 1 6070C7FE
+P 10150 6300
+F 0 "#PWR0104" H 10150 6050 50  0001 C CNN
+F 1 "GND" H 10155 6127 50  0000 C CNN
+F 2 "" H 10150 6300 50  0001 C CNN
+F 3 "" H 10150 6300 50  0001 C CNN
+	1    10150 6300
+	1    0    0    -1  
+$EndComp
+Text Label 10050 3650 0    50   ~ 0
+HDMI_5v
+Wire Wire Line
+	10350 3750 10350 3650
+Wire Wire Line
+	10350 3650 10050 3650
+Text Label 8850 1000 2    50   ~ 0
+HDMI1_D2_P
+Text Label 8850 1100 2    50   ~ 0
+HDMI1_D2_N
+Text Label 8850 1200 2    50   ~ 0
+HDMI1_D1_P
+Text Label 8850 1300 2    50   ~ 0
+HDMI1_D1_N
+Text Label 8850 1400 2    50   ~ 0
+HDMI1_D0_P
+Text Label 8850 1500 2    50   ~ 0
+HDMI1_D0_N
+Text Label 8850 1600 2    50   ~ 0
+HDMI1_CLK_P
+Text Label 8850 1700 2    50   ~ 0
+HDMI1_CLK_N
+Text Label 8850 1800 2    50   ~ 0
+HDMI0_D2_P
+Text Label 8850 1900 2    50   ~ 0
+HDMI0_D2_N
+Text Label 8850 2000 2    50   ~ 0
+HDMI0_D1_P
+Text Label 8850 2100 2    50   ~ 0
+HDMI0_D1_N
+Text Label 8850 2200 2    50   ~ 0
+HDMI0_D0_P
+Text Label 8850 2300 2    50   ~ 0
+HDMI0_D0_N
+Text Label 8850 2400 2    50   ~ 0
+HDMI0_CLK_P
+Text Label 8850 2500 2    50   ~ 0
+HDMI0_CLK_N
+Text Label 5750 1400 0    50   ~ 0
+HDMI1_HOTPLUG
+Text Label 5750 1500 0    50   ~ 0
+HDMI1_SDA
+Text Label 5750 1600 0    50   ~ 0
+HDMI1_SCL
+Text Label 5750 1700 0    50   ~ 0
+HDMI1_CEC
+Text Label 5750 1900 0    50   ~ 0
+HDMI0_HOTPLUG
+Text Label 5750 1800 0    50   ~ 0
+HDMI0_CEC
+Text Label 5750 2000 0    50   ~ 0
+HDMI0_SDA
+Text Label 5750 2100 0    50   ~ 0
+HDMI0_SCL
+Wire Wire Line
+	5750 1400 6400 1400
+Wire Wire Line
+	6400 1500 5750 1500
+Wire Wire Line
+	5750 1600 6400 1600
+Wire Wire Line
+	6400 1700 5750 1700
+Wire Wire Line
+	5750 1800 6400 1800
+Wire Wire Line
+	6400 1900 5750 1900
+Wire Wire Line
+	5750 2000 6400 2000
+Wire Wire Line
+	6400 2100 5750 2100
+Wire Wire Line
+	8300 1000 8850 1000
+Wire Wire Line
+	8850 1100 8300 1100
+Wire Wire Line
+	8300 1200 8850 1200
+Wire Wire Line
+	8850 1300 8300 1300
+Wire Wire Line
+	8300 1400 8850 1400
+Wire Wire Line
+	8850 1500 8300 1500
+Wire Wire Line
+	8300 1600 8850 1600
+Wire Wire Line
+	8300 1700 8850 1700
+Wire Wire Line
+	8850 1800 8300 1800
+Wire Wire Line
+	8300 1900 8850 1900
+Wire Wire Line
+	8850 2000 8300 2000
+Wire Wire Line
+	8300 2100 8850 2100
+Wire Wire Line
+	8850 2200 8300 2200
+Wire Wire Line
+	8300 2300 8850 2300
+Wire Wire Line
+	8300 2400 8850 2400
+Wire Wire Line
+	8300 2500 8850 2500
+Text Label 9300 1050 0    50   ~ 0
+HDMI1_D2_P
+Text Label 9300 1150 0    50   ~ 0
+HDMI1_D2_N
+Text Label 9300 1250 0    50   ~ 0
+HDMI1_D1_P
+Text Label 9300 1350 0    50   ~ 0
+HDMI1_D1_N
+Text Label 9300 1450 0    50   ~ 0
+HDMI1_D0_P
+Text Label 9300 1550 0    50   ~ 0
+HDMI1_D0_N
+Text Label 9300 1650 0    50   ~ 0
+HDMI1_CLK_P
+Text Label 9300 1750 0    50   ~ 0
+HDMI1_CLK_N
+Wire Wire Line
+	9950 1050 9300 1050
+Wire Wire Line
+	9300 1150 9950 1150
+Wire Wire Line
+	9950 1250 9300 1250
+Wire Wire Line
+	9300 1350 9950 1350
+Wire Wire Line
+	9950 1450 9300 1450
+Wire Wire Line
+	9300 1550 9950 1550
+Wire Wire Line
+	9950 1650 9300 1650
+Wire Wire Line
+	9950 1750 9300 1750
+Text Label 9300 4050 0    50   ~ 0
+HDMI0_D2_P
+Text Label 9300 4150 0    50   ~ 0
+HDMI0_D2_N
+Text Label 9300 4250 0    50   ~ 0
+HDMI0_D1_P
+Text Label 9300 4350 0    50   ~ 0
+HDMI0_D1_N
+Text Label 9300 4450 0    50   ~ 0
+HDMI0_D0_P
+Text Label 9300 4550 0    50   ~ 0
+HDMI0_D0_N
+Text Label 9300 4650 0    50   ~ 0
+HDMI0_CLK_P
+Text Label 9300 4750 0    50   ~ 0
+HDMI0_CLK_N
+Wire Wire Line
+	9300 4050 9950 4050
+Wire Wire Line
+	9950 4150 9300 4150
+Wire Wire Line
+	9300 4250 9950 4250
+Wire Wire Line
+	9950 4350 9300 4350
+Wire Wire Line
+	9300 4450 9950 4450
+Wire Wire Line
+	9950 4550 9300 4550
+Wire Wire Line
+	9950 4650 9300 4650
+Wire Wire Line
+	9950 4750 9300 4750
+Text Label 9300 2550 0    50   ~ 0
+HDMI1_HOTPLUG
+Text Label 9300 2250 0    50   ~ 0
+HDMI1_SDA
+Text Label 9300 2150 0    50   ~ 0
+HDMI1_SCL
+Text Label 9300 5550 0    50   ~ 0
+HDMI0_HOTPLUG
+Text Label 9300 4950 0    50   ~ 0
+HDMI0_CEC
+Text Label 9300 5250 0    50   ~ 0
+HDMI0_SDA
+Text Label 9300 5150 0    50   ~ 0
+HDMI0_SCL
+Wire Wire Line
+	9300 2550 9950 2550
+Wire Wire Line
+	9950 2250 9300 2250
+Wire Wire Line
+	9300 2150 9950 2150
+Wire Wire Line
+	9300 4950 9950 4950
+Wire Wire Line
+	9950 5550 9300 5550
+Wire Wire Line
+	9300 5250 9950 5250
+Wire Wire Line
+	9950 5150 9300 5150
+Wire Wire Line
+	9950 1950 9300 1950
+Text Label 9300 1950 0    50   ~ 0
+HDMI1_CEC
+NoConn ~ 9950 5450
+NoConn ~ 9950 2450
+$Comp
+L Raspberry_Pi_Compute_Module_4:Compute_Module_4_Functional U1
+U 4 1 6088B67B
+P 600 950
+F 0 "U1" H 1208 1237 60  0000 C CNN
+F 1 "Compute_Module_4_Functional" H 1208 1131 60  0000 C CNN
+F 2 "RPi_Compute_Module_4:Raspberry-Pi-4-Compute-Module" H 800 1000 60  0001 L CNN
+F 3 "" H 800 800 60  0001 L CNN
+	4    600  950 
+	1    0    0    -1  
+$EndComp
+Text Label 2150 1150 2    50   ~ 0
+CM_USB_D+
+Text Label 2150 1050 2    50   ~ 0
+CM_USB_D-
+Text Label 2150 950  2    50   ~ 0
+CM_USB_OTG
+Wire Wire Line
+	2150 950  1600 950 
+Wire Wire Line
+	2150 1050 1600 1050
+Wire Wire Line
+	2150 1150 1600 1150
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 608A4789
+P 1000 1800
+F 0 "J2" H 1057 2267 50  0000 C CNN
+F 1 "USB_B_Micro" H 1057 2176 50  0000 C CNN
+F 2 "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 1150 1750 50  0001 C CNN
+F 3 "~" H 1150 1750 50  0001 C CNN
+	1    1000 1800
+	1    0    0    -1  
+$EndComp
+Text Label 2300 950  0    50   ~ 0
+CM_USB_D+
+Text Label 2300 1050 0    50   ~ 0
+CM_USB_D-
+Wire Wire Line
+	2300 1050 2850 1050
+Wire Wire Line
+	2300 950  2850 950 
+$Comp
+L Interface_USB:FSUSB42MUX U2
+U 1 1 608C5FED
+P 3250 1150
+F 0 "U2" H 3250 1731 50  0000 C CNN
+F 1 "FSUSB42MUX" H 3250 1640 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 3250 350 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FSUSB42-D.PDF" H 3250 1050 50  0001 C CNN
+	1    3250 1150
+	1    0    0    -1  
+$EndComp
+Text Label 2300 1350 0    50   ~ 0
+CM_USB_OTG
+Wire Wire Line
+	2300 1350 2850 1350
+Wire Wire Line
+	2300 1350 2300 1600
+Wire Wire Line
+	2300 1600 2600 1600
+Wire Wire Line
+	2900 1250 2850 1250
+Wire Wire Line
+	2850 1250 2150 1250
+Wire Wire Line
+	2150 1250 2150 1700
+Wire Wire Line
+	2150 1700 3250 1700
+Wire Wire Line
+	3250 1700 3250 1600
+Connection ~ 2850 1250
+Wire Wire Line
+	3250 1600 2900 1600
+Connection ~ 3250 1600
+Wire Wire Line
+	3250 1600 3250 1550
+$Comp
+L Device:R R9
+U 1 1 608EF86A
+P 2750 1600
+F 0 "R9" V 2543 1600 50  0000 C CNN
+F 1 "2k2" V 2634 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2680 1600 50  0001 C CNN
+F 3 "~" H 2750 1600 50  0001 C CNN
+	1    2750 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 6090313F
+P 3250 1800
+F 0 "#PWR0105" H 3250 1550 50  0001 C CNN
+F 1 "GND" H 3255 1627 50  0000 C CNN
+F 2 "" H 3250 1800 50  0001 C CNN
+F 3 "" H 3250 1800 50  0001 C CNN
+	1    3250 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 1700
+Wire Wire Line
+	3250 1800 3250 1700
+$Comp
+L Device:R R5
+U 1 1 6093F8BA
+P 1550 1600
+F 0 "R5" V 1343 1600 50  0000 C CNN
+F 1 "2k2" V 1434 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1480 1600 50  0001 C CNN
+F 3 "~" H 1550 1600 50  0001 C CNN
+	1    1550 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1600 1400 1600
+Wire Wire Line
+	1700 1600 2300 1600
+Connection ~ 2300 1600
+Wire Wire Line
+	1300 1800 1850 1800
+Text Label 1850 1800 2    50   ~ 0
+PROG_USB_D+
+Text Label 1850 1900 2    50   ~ 0
+PROG_USB_D-
+Wire Wire Line
+	1850 1900 1300 1900
+Wire Wire Line
+	3650 1250 4200 1250
+Text Label 4200 1250 2    50   ~ 0
+PROG_USB_D+
+Text Label 4200 1350 2    50   ~ 0
+PROG_USB_D-
+Wire Wire Line
+	4200 1350 3650 1350
+Wire Wire Line
+	3650 950  4200 950 
+Text Label 4200 950  2    50   ~ 0
+HUB_USB_D+
+Text Label 4200 1050 2    50   ~ 0
+HUB_USB_D-
+Wire Wire Line
+	4200 1050 3650 1050
+$Comp
+L power:GND #PWR0113
+U 1 1 609A49BB
+P 1000 2400
+F 0 "#PWR0113" H 1000 2150 50  0001 C CNN
+F 1 "GND" H 1005 2227 50  0000 C CNN
+F 2 "" H 1000 2400 50  0001 C CNN
+F 3 "" H 1000 2400 50  0001 C CNN
+	1    1000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2400 1000 2300
+Wire Wire Line
+	900  2200 900  2300
+Wire Wire Line
+	900  2300 1000 2300
+Connection ~ 1000 2300
+Wire Wire Line
+	1000 2300 1000 2200
+$Comp
+L Interface_USB:USB2514B_Bi U3
+U 1 1 609AFF76
+P 3300 4000
+F 0 "U3" H 3300 2411 50  0000 C CNN
+F 1 "USB2514B_Bi" H 3300 2320 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-36-1EP_6x6mm_P0.5mm_EP3.7x3.7mm" H 4600 2500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00001692C.pdf" H 4900 2400 50  0001 C CNN
+	1    3300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3100 1950 3100
+Wire Wire Line
+	1950 3100 1950 2200
+Wire Wire Line
+	1950 2200 3000 2200
+Wire Wire Line
+	3600 2200 3600 2500
+Wire Wire Line
+	3500 2500 3500 2200
+Connection ~ 3500 2200
+Wire Wire Line
+	3300 2200 3300 2500
+Connection ~ 3300 2200
+Wire Wire Line
+	3300 2200 3500 2200
+Wire Wire Line
+	3200 2500 3200 2200
+Connection ~ 3200 2200
+Wire Wire Line
+	3200 2200 3300 2200
+Wire Wire Line
+	3100 2200 3100 2500
+Connection ~ 3100 2200
+Wire Wire Line
+	3100 2200 3200 2200
+Wire Wire Line
+	3000 2500 3000 2200
+Connection ~ 3000 2200
+Wire Wire Line
+	3000 2200 3100 2200
+Wire Wire Line
+	2200 3400 1650 3400
+Text Label 1650 3400 0    50   ~ 0
+HUB_USB_D+
+Text Label 1650 3300 0    50   ~ 0
+HUB_USB_D-
+Wire Wire Line
+	1650 3300 2200 3300
+Text Label 1650 3600 0    50   ~ 0
+nEXTRESET
+Wire Wire Line
+	1650 3600 2200 3600
+$Comp
+L power:GND #PWR0114
+U 1 1 60A1DBD8
+P 3300 5800
+F 0 "#PWR0114" H 3300 5550 50  0001 C CNN
+F 1 "GND" H 3305 5627 50  0000 C CNN
+F 2 "" H 3300 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5800 3300 5750
+$Comp
+L Device:R R8
+U 1 1 60A25210
+P 2000 5400
+F 0 "R8" H 2070 5446 50  0000 L CNN
+F 1 "36k" H 2070 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1930 5400 50  0001 C CNN
+F 3 "~" H 2000 5400 50  0001 C CNN
+	1    2000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60A25945
+P 1700 5400
+F 0 "R6" H 1770 5446 50  0000 L CNN
+F 1 "36k" H 1770 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1630 5400 50  0001 C CNN
+F 3 "~" H 1700 5400 50  0001 C CNN
+	1    1700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60A25ABD
+P 1400 5400
+F 0 "R4" H 1470 5446 50  0000 L CNN
+F 1 "36k" H 1470 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1330 5400 50  0001 C CNN
+F 3 "~" H 1400 5400 50  0001 C CNN
+	1    1400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60A25C86
+P 1100 5400
+F 0 "R3" H 1170 5446 50  0000 L CNN
+F 1 "36k" H 1170 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1030 5400 50  0001 C CNN
+F 3 "~" H 1100 5400 50  0001 C CNN
+	1    1100 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5100 2000 5100
+Wire Wire Line
+	2000 5100 2000 5250
+Wire Wire Line
+	2200 5000 1700 5000
+Wire Wire Line
+	1700 5000 1700 5250
+Wire Wire Line
+	2200 4900 1400 4900
+Wire Wire Line
+	1400 4900 1400 5250
+Wire Wire Line
+	2200 4800 1100 4800
+Wire Wire Line
+	1100 4800 1100 5250
+Wire Wire Line
+	1100 5550 1100 5750
+Wire Wire Line
+	1100 5750 1400 5750
+Wire Wire Line
+	2000 5750 2000 5550
+Wire Wire Line
+	1700 5550 1700 5750
+Connection ~ 1700 5750
+Wire Wire Line
+	1700 5750 2000 5750
+Wire Wire Line
+	1400 5550 1400 5750
+Connection ~ 1400 5750
+Wire Wire Line
+	1400 5750 1700 5750
+Connection ~ 2000 5750
+Connection ~ 3300 5750
+Wire Wire Line
+	3300 5750 3300 5500
+Wire Wire Line
+	2000 5750 3300 5750
+$Comp
+L Device:R R7
+U 1 1 60A93757
+P 1750 3900
+F 0 "R7" V 1543 3900 50  0000 C CNN
+F 1 "12k" V 1634 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1680 3900 50  0001 C CNN
+F 3 "~" H 1750 3900 50  0001 C CNN
+	1    1750 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 3900 2200 3900
+Wire Wire Line
+	1600 3900 1100 3900
+Wire Wire Line
+	750  3900 750  4650
+Wire Wire Line
+	750  5750 1100 5750
+Connection ~ 1100 5750
+$Comp
+L Device:Crystal Y1
+U 1 1 60AA583B
+P 1100 4350
+F 0 "Y1" V 1146 4219 50  0000 R CNN
+F 1 "Crystal" V 1055 4219 50  0000 R CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 1100 4350 50  0001 C CNN
+F 3 "~" H 1100 4350 50  0001 C CNN
+	1    1100 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60AA6725
+P 1100 4050
+F 0 "C3" H 985 4004 50  0000 R CNN
+F 1 "27pF" H 985 4095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1138 3900 50  0001 C CNN
+F 3 "~" H 1100 4050 50  0001 C CNN
+	1    1100 4050
+	-1   0    0    1   
+$EndComp
+Connection ~ 1100 3900
+Wire Wire Line
+	1100 3900 750  3900
+$Comp
+L Device:C C2
+U 1 1 60AB3A14
+P 900 4650
+F 0 "C2" V 1152 4650 50  0000 C CNN
+F 1 "27pF" V 1061 4650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 938 4500 50  0001 C CNN
+F 3 "~" H 900 4650 50  0001 C CNN
+	1    900  4650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 750  4650
+Wire Wire Line
+	750  4650 750  5750
+Wire Wire Line
+	1050 4650 1100 4650
+Wire Wire Line
+	1100 4650 1100 4550
+Wire Wire Line
+	2200 4100 1450 4100
+Wire Wire Line
+	1450 4100 1450 4200
+Wire Wire Line
+	1450 4200 1100 4200
+Connection ~ 1100 4200
+Wire Wire Line
+	2200 4200 1550 4200
+Wire Wire Line
+	1550 4200 1550 4550
+Wire Wire Line
+	1550 4550 1100 4550
+Connection ~ 1100 4550
+Wire Wire Line
+	1100 4550 1100 4500
+NoConn ~ 2200 4400
+NoConn ~ 2200 4500
+NoConn ~ 2200 3700
+$Comp
+L Device:C C4
+U 1 1 60AEE2C2
+P 1200 6450
+F 0 "C4" H 1315 6496 50  0000 L CNN
+F 1 "10µ" H 1315 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 1238 6300 50  0001 C CNN
+F 3 "~" H 1200 6450 50  0001 C CNN
+	1    1200 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 60AEE5C3
+P 1600 6450
+F 0 "C5" H 1715 6496 50  0000 L CNN
+F 1 "10µ" H 1715 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 1638 6300 50  0001 C CNN
+F 3 "~" H 1600 6450 50  0001 C CNN
+	1    1600 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60AFBE47
+P 2000 6450
+F 0 "C6" H 2115 6496 50  0000 L CNN
+F 1 "100n" H 2115 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2038 6300 50  0001 C CNN
+F 3 "~" H 2000 6450 50  0001 C CNN
+	1    2000 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 60AFBFC1
+P 2400 6450
+F 0 "C7" H 2515 6496 50  0000 L CNN
+F 1 "100n" H 2515 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2438 6300 50  0001 C CNN
+F 3 "~" H 2400 6450 50  0001 C CNN
+	1    2400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 60B0F9CB
+P 2800 6450
+F 0 "C8" H 2915 6496 50  0000 L CNN
+F 1 "100n" H 2915 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2838 6300 50  0001 C CNN
+F 3 "~" H 2800 6450 50  0001 C CNN
+	1    2800 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 60B0FAED
+P 3200 6450
+F 0 "C9" H 3315 6496 50  0000 L CNN
+F 1 "100n" H 3315 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3238 6300 50  0001 C CNN
+F 3 "~" H 3200 6450 50  0001 C CNN
+	1    3200 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 60B1D639
+P 3600 6450
+F 0 "C10" H 3715 6496 50  0000 L CNN
+F 1 "100n" H 3715 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3638 6300 50  0001 C CNN
+F 3 "~" H 3600 6450 50  0001 C CNN
+	1    3600 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 60B1D777
+P 4000 6450
+F 0 "C11" H 4115 6496 50  0000 L CNN
+F 1 "100n" H 4115 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4038 6300 50  0001 C CNN
+F 3 "~" H 4000 6450 50  0001 C CNN
+	1    4000 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6300 1200 6200
+Wire Wire Line
+	1200 6200 1600 6200
+Wire Wire Line
+	4000 6200 4000 6300
+Wire Wire Line
+	4000 6600 4000 6700
+Wire Wire Line
+	4000 6700 3600 6700
+Wire Wire Line
+	1200 6700 1200 6600
+Wire Wire Line
+	1600 6300 1600 6200
+Connection ~ 1600 6200
+Wire Wire Line
+	1600 6200 2000 6200
+Wire Wire Line
+	1600 6600 1600 6700
+Connection ~ 1600 6700
+Wire Wire Line
+	1600 6700 1200 6700
+Wire Wire Line
+	2000 6700 2000 6600
+Connection ~ 2000 6700
+Wire Wire Line
+	2000 6700 1600 6700
+Wire Wire Line
+	2000 6300 2000 6200
+Connection ~ 2000 6200
+Wire Wire Line
+	2000 6200 2400 6200
+Wire Wire Line
+	2400 6200 2400 6300
+Connection ~ 2400 6200
+Wire Wire Line
+	2400 6200 2600 6200
+Wire Wire Line
+	2400 6600 2400 6700
+Connection ~ 2400 6700
+Wire Wire Line
+	2400 6700 2000 6700
+Wire Wire Line
+	2800 6700 2800 6600
+Connection ~ 2800 6700
+Wire Wire Line
+	2800 6700 2600 6700
+Wire Wire Line
+	2800 6300 2800 6200
+Connection ~ 2800 6200
+Wire Wire Line
+	2800 6200 3200 6200
+Wire Wire Line
+	3200 6300 3200 6200
+Connection ~ 3200 6200
+Wire Wire Line
+	3200 6200 3600 6200
+Wire Wire Line
+	3200 6600 3200 6700
+Connection ~ 3200 6700
+Wire Wire Line
+	3200 6700 2800 6700
+Wire Wire Line
+	3600 6600 3600 6700
+Connection ~ 3600 6700
+Wire Wire Line
+	3600 6700 3200 6700
+Wire Wire Line
+	3600 6300 3600 6200
+Connection ~ 3600 6200
+Wire Wire Line
+	3600 6200 4000 6200
+$Comp
+L power:GND #PWR0115
+U 1 1 60BF78A3
+P 2600 6800
+F 0 "#PWR0115" H 2600 6550 50  0001 C CNN
+F 1 "GND" H 2605 6627 50  0000 C CNN
+F 2 "" H 2600 6800 50  0001 C CNN
+F 3 "" H 2600 6800 50  0001 C CNN
+	1    2600 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 6700
+Wire Wire Line
+	2600 6700 2400 6700
+Wire Wire Line
+	2600 6800 2600 6700
+Wire Wire Line
+	2600 6200 2600 6100
+Connection ~ 2600 6200
+Wire Wire Line
+	2600 6200 2800 6200
+Wire Wire Line
+	3500 2200 3500 2100
+Wire Wire Line
+	3500 2200 3600 2200
+$Comp
+L power:+3V3 #PWR0116
+U 1 1 60C35288
+P 3500 2100
+F 0 "#PWR0116" H 3500 1950 50  0001 C CNN
+F 1 "+3V3" H 3515 2273 50  0000 C CNN
+F 2 "" H 3500 2100 50  0001 C CNN
+F 3 "" H 3500 2100 50  0001 C CNN
+	1    3500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 60C35BE0
+P 2600 6100
+F 0 "#PWR0117" H 2600 5950 50  0001 C CNN
+F 1 "+3V3" H 2615 6273 50  0000 C CNN
+F 2 "" H 2600 6100 50  0001 C CNN
+F 3 "" H 2600 6100 50  0001 C CNN
+	1    2600 6100
+	1    0    0    -1  
+$EndComp
+Text Label 5150 3100 2    50   ~ 0
+HUB_USB_P1_D-
+Text Label 5150 3200 2    50   ~ 0
+HUB_USB_P1_D+
+Text Label 5150 3300 2    50   ~ 0
+HUB_USB_P1_PWR
+Text Label 5150 3400 2    50   ~ 0
+HUB_USB_P1_nOC
+Wire Wire Line
+	5150 3100 4400 3100
+Wire Wire Line
+	5150 3200 4400 3200
+Wire Wire Line
+	5150 3300 4400 3300
+Wire Wire Line
+	5150 3400 4400 3400
+Text Label 5150 3600 2    50   ~ 0
+HUB_USB_P2_D-
+Text Label 5150 3700 2    50   ~ 0
+HUB_USB_P2_D+
+Text Label 5150 3800 2    50   ~ 0
+HUB_USB_P2_PWR
+Text Label 5150 3900 2    50   ~ 0
+HUB_USB_P2_nOC
+Wire Wire Line
+	5150 3600 4400 3600
+Wire Wire Line
+	5150 3700 4400 3700
+Wire Wire Line
+	5150 3800 4400 3800
+Wire Wire Line
+	5150 3900 4400 3900
+Text Label 5150 4100 2    50   ~ 0
+HUB_USB_P3_D-
+Text Label 5150 4200 2    50   ~ 0
+HUB_USB_P3_D+
+Text Label 5150 4300 2    50   ~ 0
+HUB_USB_P3_PWR
+Text Label 5150 4400 2    50   ~ 0
+HUB_USB_P3_nOC
+Wire Wire Line
+	5150 4100 4400 4100
+Wire Wire Line
+	5150 4200 4400 4200
+Wire Wire Line
+	5150 4300 4400 4300
+Wire Wire Line
+	5150 4400 4400 4400
+Text Label 5150 4600 2    50   ~ 0
+HUB_USB_P4_D-
+Text Label 5150 4700 2    50   ~ 0
+HUB_USB_P4_D+
+Text Label 5150 4800 2    50   ~ 0
+HUB_USB_P4_PWR
+Text Label 5150 4900 2    50   ~ 0
+HUB_USB_P4_nOC
+Wire Wire Line
+	5150 4600 4400 4600
+Wire Wire Line
+	5150 4700 4400 4700
+Wire Wire Line
+	5150 4800 4400 4800
+Wire Wire Line
+	5150 4900 4400 4900
+$Sheet
+S 6500 3450 1350 1200
+U 60CE0193
+F0 "Sheet60CE0192" 50
+F1 "CM4-pcie_USB.sch" 50
+$EndSheet
+Text GLabel 5150 3100 2    50   Input ~ 0
+HUB_USB_P1_D-
+Text GLabel 5150 3200 2    50   Input ~ 0
+HUB_USB_P1_D+
+Text GLabel 5150 3300 2    50   Input ~ 0
+HUB_USB_P1_PWR
+Text GLabel 5150 3400 2    50   Input ~ 0
+HUB_USB_P1_nOC
+Text GLabel 5150 3600 2    50   Input ~ 0
+HUB_USB_P2_D-
+Text GLabel 5150 3800 2    50   Input ~ 0
+HUB_USB_P2_PWR
+Text GLabel 5150 3900 2    50   Input ~ 0
+HUB_USB_P2_nOC
+Text GLabel 5150 4100 2    50   Input ~ 0
+HUB_USB_P3_D-
+Text GLabel 5150 4200 2    50   Input ~ 0
+HUB_USB_P3_D+
+Text GLabel 5150 4300 2    50   Input ~ 0
+HUB_USB_P3_PWR
+Text GLabel 5150 4400 2    50   Input ~ 0
+HUB_USB_P3_nOC
+Text GLabel 5150 4600 2    50   Input ~ 0
+HUB_USB_P4_D-
+Text GLabel 5150 4700 2    50   Input ~ 0
+HUB_USB_P4_D+
+Text GLabel 5150 4800 2    50   Input ~ 0
+HUB_USB_P4_PWR
+Text GLabel 5150 4900 2    50   Input ~ 0
+HUB_USB_P4_nOC
+Text GLabel 5150 3700 2    50   Input ~ 0
+HUB_USB_P2_D+
+$Comp
+L power:+3V3 #PWR0125
+U 1 1 60EDBF33
+P 3250 650
+F 0 "#PWR0125" H 3250 500 50  0001 C CNN
+F 1 "+3V3" H 3265 823 50  0000 C CNN
+F 2 "" H 3250 650 50  0001 C CNN
+F 3 "" H 3250 650 50  0001 C CNN
+	1    3250 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 750  3250 650 
+Text GLabel 1650 3600 0    50   Input ~ 0
+nEXTRST
+NoConn ~ 1300 2000
+$EndSCHEMATC
